@@ -1,2 +1,2 @@
 # 1000actsofkindness
-Foundation Repository Site Created August 12, 2015
+Foundation Repository Site Created August 12th, 2015
