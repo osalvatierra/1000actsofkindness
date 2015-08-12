@@ -1,0 +1,280 @@
+/* Aurthor Oscar Salvatierra */
+
+/* Media Query for Logo */
+
+        @media only screen and (max-width: 668px) {
+                img.logo {	
+                	display: none;
+                	}
+
+                }
+
+
+        @media only screen and (min-width: 671px) and (max-width: 768px) {
+                img.logo {	
+
+                	padding-top: $paddingbase;
+                	width: 125px;
+                	}
+
+                }
+
+        @media only screen and (min-width: 768px) and (max-width: 1025px) {
+                img.logo {
+        	        padding-left: $paddingbase - 10px;
+        	        padding-top: $paddingbase - 10px;
+        	        width: 100%;
+             
+                        }
+
+                 img.icon {
+                        width: 30%;
+                        }
+                }
+
+/* End Media Query for Logo */
+
+
+
+/* MEDIA QUERIES FROM 320px to 399px */
+
+        @media only screen and (min-width: 320px) and (max-width: 399px) {
+       
+                img.icon {
+                        width: 70%; 
+                }
+
+                .mtop {
+                        margin-top: 0px;
+                }
+
+                .mtop h2 {
+
+                        color: #009fda !important;
+                }
+
+                .hero { 
+                        background-image:url("/images/dandelion-xsmall.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        }
+
+                .box{
+                        padding: $paddingbase;
+                        margin-top: $paddingbase;
+                        font-weight: $fweight + 300;
+                }
+                .f-topbar-fixed 
+                        {
+                        padding-top: 0px !important;
+                        }
+                }
+
+        /* END */
+
+
+/* MEDIA QUERIES FROM 320px to 767px */
+
+        /* Learn More button, button hover and img.con */
+
+
+                @media only screen and (min-width: 400px) and (max-width: 1026px) {
+                .mtop {
+                        margin-top: 0px;
+                        }
+
+                .mtop h2 {
+                        color: #009fda !important;
+                      }
+                }
+
+                @media only screen and (min-width: 1027px) and (max-width: 1440px) {
+                .mtop {
+                        margin-top: 19px;
+                        }
+                .mtop h2 {
+
+                        color: #009fda !important;
+                        }
+
+                }
+
+
+        @media only screen and (min-width: 320px) and (max-width: 767px) {
+
+                a.btn {
+                        width: 100%;
+                }
+
+                a.btn:hover {
+                        width: 100%;
+                    }
+                img.icon {
+                        width: 28%;
+                        }
+                .mtop {
+                        margin-top: 19px;
+                        width: 70% !important;
+                        float: left !important; 
+                        }
+                .mtop h2 { 
+
+                        color: #009fda !important;
+                        }
+
+                .leftsm {
+                        text-align: right;
+                        float-right: right;
+                        position: absolute;
+                        width: 100%;
+                        }
+
+                .social {
+                        float: right !important;
+                        width: 100% !important;
+                        padding-bottom: 25px !important;
+                    }
+                .contact-us {
+                        float: left !important;
+                        width: 100% !important;
+                        height: 150px !important;
+                    }
+                .contact-us: hover {
+                        float: left !important;
+                        width: 100% !important;
+                        height: 150px !important;
+                    }    
+                .footer {
+                        height: 150px !important;
+                }
+
+                }
+
+
+        /* END */
+
+/* Media Query for Hero Image from 400px to 1920px */
+
+
+        @media only screen and (min-width: 400px) and (max-width: 739px) {
+                
+                .hero {	
+                	background-image:url("/images/dandelion-small.jpg");
+                	background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 19em;
+                	}
+                .box{
+                        padding: $paddingbase;
+                        margin-top: $paddingbase;
+                        font-weight: $fweight + 300;
+                        }
+
+                .box h1 {
+                        font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+                        color: $white;
+                        font-size: $basefont + 22px;
+                        line-height: $baselineheight + 24px;
+                        text-align: left;
+                        }
+                .box p {
+                        line-height: $baselineheight + 23px;
+                }
+                .f-topbar-fixed 
+                        {
+                        padding-top: 0px !important;
+                        }
+                } 
+
+        @media only screen and (min-width: 740px) and (max-width: 1024px) {
+                
+                .hero {
+                	background-image:url("/images/dandelion-medium.jpg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position-y: -50px;
+                        height: 21em;
+                }
+                .box {
+                        padding: $paddingbase + 40px;
+                        margin-top: $paddingbase;
+                        font-weight: $fweight + 300;
+                }
+
+                .box h1 {
+                        font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+                        color: $white;
+                        font-size: $basefont + 30px;
+                        line-height: $baselineheight + 24px;
+                        text-align: left;
+                }
+                .box p {
+                        line-height: $baselineheight + 23px;
+                }
+                .f-topbar-fixed 
+                        {
+                        padding-top: 0px !important;
+                        }
+                }
+
+
+        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+                
+                .hero {
+                	background-image:url("/images/dandelion-large.jpg");
+                        background-repeat: no-repeat;
+                        background-position-y: -50px;
+                        background-size: cover;
+                        height: 26em;
+                }
+                .box {
+                        padding: $paddingbase + 40px;
+                        margin-top: $paddingbase;
+                        font-weight: $fweight + 300;
+                }
+                .box h1 {
+                        font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+                        color: $white;
+                        font-size: $basefont + 30px;
+                        line-height: $baselineheight + 24px;
+                        text-align: left;
+                }
+                .box p {
+                        line-height: $baselineheight + 23px;
+                }
+
+                .f-topbar-fixed 
+                        {
+                        padding-top: 0px !important;
+                        }
+
+                }
+ 
+        @media only screen and (min-width: 1441px) and (max-width: 1920px) {
+                
+                .hero {
+                	background-image:url("/images/dandelion-xlarge.jpg");
+                        background-repeat: no-repeat;
+                        height: 29em;
+                }
+                .box {
+                        padding: $paddingbase + 40px;
+                        margin-top: $paddingbase;
+                        font-weight: $fweight + 300;
+                }
+                .box h1 {
+                        font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+                        color: $white;
+                        font-size: $basefont + 30px;
+                        line-height: $baselineheight + 24px;
+                }
+                .box p {
+                        line-height: $baselineheight + 23px;
+                }
+                .f-topbar-fixed 
+                        {
+                        padding-top: 0px !important;
+                        }
+                }
+
+        /* END */

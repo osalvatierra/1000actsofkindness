@@ -1,0 +1,303 @@
+/* Author: Oscar Salvatierra */
+
+@import 'variables';
+@import 'mixins';
+@import 'mediaqueries';
+
+/* CSS using Above Variable and Mixin Definitions */
+
+body {
+    font: $sans-serif-font;
+    font-size: $basefont + 4px;
+}
+
+hr {
+	text-align: center;
+	margin: $marginbase auto;
+	opacity: $opacity1;
+}
+
+ul {
+	text-transform: $textupper;
+}
+	ul.inline-list.right a {
+
+		color: $white;
+		text-transform: none;
+
+	}
+
+	ul.inline-list.right a:hover {
+
+
+		color: $transparent3;
+	}
+
+h1 {
+	
+	font-family: $Courier-font;
+	font-size: $basefont + 18px;
+	font-color: $white;
+	line-height: $baselineheight + 18px;
+	margin-top: $marginbase +16px;
+	margin-bottom: $marginbase;
+	text-align: center;
+}
+
+h2 {
+	color: $white !important;
+	font-size: $basefont + 22px;
+	line-height: $baselineheight + 24px;
+}
+
+h3 {
+	font-family: $Courier-font;
+	font-color: $white;
+	font-size: $basefont + 10px;
+	line-height: $baselineheight;	
+	font-weight: $fweight;
+	padding-bottom: $paddingbase;
+}
+
+h4 {
+	font-family: $Courier-font;
+	font-color: $white;
+	font-size: $basefont + 14px;
+	padding-top: $paddingbase - 5px;
+
+}
+
+.columns.large-centered {
+	@include paddingleftright;
+
+		}@media only screen and (max-width: $columnsmax)
+
+			{.columns.large-centered {$basefont: - 1px}
+
+			}@media only screen and (min-width: columnsmin)
+
+			{.columns.large-centered {$basefont: - 0px}
+
+			}
+
+
+.about-box{color: $white;}
+
+.full-width {
+    max-width:100% !important;
+    position: relative;
+}
+
+
+
+
+a.btn {
+	background-color: $transparent5 !important;
+	display:inline-block;
+	padding:12px 20px 10px;
+	font-family:'Freight',sans-serif;font-size:14px !important;
+	font-size:2rem;
+	border-radius:3px;
+	border:1px solid #ffffff;
+	color: #ffffff;
+}
+
+a.btn:hover {
+	background-color: #009fda !important;
+	color: #ffffff;
+}
+
+
+.button-group li .button {
+	border: 0 !important;
+}
+
+
+
+footer p, footer a {
+	font-size: $basefont;
+
+}
+
+.off-white-content {
+	padding-top: $paddingbase + 70px;
+	padding-bottom: $paddingbase + 70px;
+	background-color: $offwhite;
+
+}
+
+.evenrows {
+	padding-top: $paddingbase + 70px;  
+	padding-bottom: $paddingbase + 70px;
+}
+
+.panel { 
+	@include panel;
+}
+.qcontainer {
+	padding-top: $paddingbase + 35px;
+	padding-bottom: $paddingbase + 30px;
+
+}
+
+.qmargin {
+	padding-top: $paddingbase + 30px;
+	padding-bottom: $paddingbase + 30px;
+	padding-left: $paddingbase + 30px;
+	padding-right: $paddingbase + 30px;
+	margin-top: $paddingbase + 35px;
+	margin-left: $paddingbase + 10px;
+	margin-right: $paddingbase + 10px;
+}
+
+.large-4 img{
+	box-shadow: $boxshadow1;
+}
+
+/* fixedbar styles */
+
+#fixedbar { 
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+}
+
+#navigation {
+  display: inline;
+}
+
+/* fixedbar styles */
+
+/* pull quote left and right styles */
+
+.qbox {
+	width: 100%;
+	margin-top: $marginbase + 55px;
+	margin-bottom: $marginbase + 65px;
+	margin-bottom: $marginbase + 60px;
+}
+
+.quote-left {
+	font-family: Georgia,Times,serif;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	color: #009fda;
+	font-size: 84px;
+	font-weight: 700;
+}
+
+.quote-right {
+	font-family: Georgia,Times,serif;
+	position: absolute;
+	bottom: -21px;
+	right: 10px;
+	color: #009fda;
+	font-size: 84px;
+	font-weight: 700;
+}
+
+/* Footer Styles */
+
+
+              
+.full-width {
+  max-width: 1400px;
+}
+
+$text-color: #fff;
+
+// Contact Us and Social
+
+.contact-us {
+	
+	background: #1d6da2;
+	padding-top: 70px;
+	height: 200px;
+}
+
+.contact-us:hover {
+	
+	background: $lightgreen;
+	padding-top: 70px;
+	height: 200px;
+}
+
+.spadding { 
+	
+	padding-left: $paddingbase !important;
+	padding-right: $paddingbase !important;
+}
+
+.social {
+    background-color: #2980b9;
+    height: 200px;
+}
+
+.fa:hover {
+  color: #0e4b74;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  font-size: 28px;
+}
+
+// footer CSS
+
+.fcontainer {
+  height: 400px;
+  background-color: $grey;
+  background-image: url("/images/forest-bg.gif");
+}
+
+.footer {
+  text-align: center;
+  color: $text-color;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  height: 300px;
+  i {
+    font-size: 100px;
+  }
+}
+
+.footer {
+  h4 {
+    color: $text-color;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-bottom: 10px;
+  }
+  p, a {
+    font-weight: 300; 
+    font-size: .8em;
+    color: $text-color;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+.footer {
+  .columns:nth-child(n+2) {
+ 
+  }
+ }
+}
+
+.footer-links {
+  list-style-type: none;
+  li {
+    margin-top: .5em;
+  }
+}
+
+.footer i {
+  font-size: 28px;
+}
+              

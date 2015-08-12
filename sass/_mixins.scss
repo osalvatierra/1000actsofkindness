@@ -1,0 +1,29 @@
+/* Mixin Padding Rules */
+
+@mixin large-centered {
+	padding: 35px;
+	font-weight: 900;
+}
+
+
+@mixin paddingleftright {
+	padding-left: $paddingbase - 5px;
+	padding-right: $paddingbase - 5px;
+}
+
+
+@mixin smallbutton {
+	border: 2px;
+	color: $white;
+	border-radius: $borderradiusbase;
+	padding: $paddingvar1;
+	margin: $marginzero;
+}
+
+@mixin panel {
+	margin: 40px 0 40px 0;
+	box-shadow: none !important;
+	color: none !important;
+	border: none;
+	background-color: none !important;
+}

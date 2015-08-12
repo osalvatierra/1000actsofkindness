@@ -1,0 +1,68 @@
+/* Aurthor Oscar Salvatierra */
+
+
+/* Color Variables */
+
+$white: #fff;
+$offwhite: #EAEAEA;
+$black: #000;
+$grey: #a9a9a9;
+$lightgreen: #60b7d4;
+$hovercolor1: rgba(255,255,255,0.5);
+$hovercolor2: rgba(255,255,255,0.7);
+
+/* Opacity Settings */
+$transparent1: rgba(0,0,0,0.1);
+$transparent2: rgba(0,0,0,0.2);
+$transparent3: rgba(0,0,0,0.5);
+$transparent4: rgba(0,0,0,0.55);
+$transparent5: rgba(255, 255, 255, 0.1);
+$opacity1: 0.5;
+$boxopacity: 0 0 0;
+$boxopacity2: inset 0px 0px 0 2000px $transparent2;
+$transparent: transparent;
+
+/* Miscellaneous Variables */
+$textupper: uppercase;
+
+
+/* Font Size Variables */
+$small: 0.8125em;
+$basefont: 14px;
+$fweight: 500;
+
+
+/* Font Type Variables */
+$sans-serif-font: 'Raleway', 'sans-serif';
+$Courier-font: 'American Typewriter', 'Courier New', 'Courier', 'Monaco', 'mono';
+
+
+/* Text Variables */
+$textuptransform: uppercase;
+$textnonetransform: none;
+
+
+/* Line Height Variables */
+$baselineheight: 10px;
+
+/* Colulmns Variables */
+$columnsmax: 40em;
+$columnsmin: 40.063em;
+
+$radiusbuttonmin1: 64.063em;
+$radiusbuttonmin2: 40.063em;
+
+/* Padding, Border and Margin Variable */
+
+$borderradiusbase: 5px;
+
+$marginbase: 0px;
+
+$border1: 0px !important;
+$paddingvar1: 15px 50px 15px 50px;
+
+$boxshadow1: 2px 2px 10px $transparent1;
+$boxshadow2: 2px 2px 10px $transparent2;
+
+
+$paddingbase: 10px;
